@@ -1,0 +1,43 @@
+{
+  "name": "stream-rtsp",
+  "version": "0.1.1",
+  "description": "Stream RTSP to Browser via WecRTC, HLS or DASH",
+  "scripts": {
+    "build": "cd stream; go clean; go get ./...; go build -ldflags='-s -w' .; cd ..",
+    "build-wd": "cd stream && go mod tidy  && go build -o stream.exe && cd ..",
+    "start": "node server/serve",
+    "lint": "eslint server client"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmandic/stream-rtsp.git"
+  },
+  "author": "Vladimir Mandic <mandic00@live.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladmandic/stream-rtsp/issues"
+  },
+  "homepage": "https://github.com/vladmandic/stream-rtsp#readme",
+  "keywords": [
+    "rtsp",
+    "rtmp",
+    "webrtc",
+    "hls",
+    "dash",
+    "ffmpeg",
+    "stream-server"
+  ],
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "hint": "^6.2.0"
+  },
+  "dependencies": {
+    "@vladmandic/pilogger": "^0.4.4"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "server": {
+    "httpPort": 8000,
+    "httpsPort": 8001,
+    "encoderPort": ":8002",
+    "iceServers": [],
+    "webrtcMinPort": 32768,
+    "webrtcMaxPort": 65535,
+    "retryConnectSec": 10,
+    "startStreamServer": true
+  },
+  "streams": {
+    "reowhite": {
+      "VOD": false,
+      "disableAudio": true,
+      "debug": false,
+      "url": "rtsp://admin:admin@192.168.1.11:1935"
+    }
+  },
+  "client": {
+    "debug": true,
+    "defaultStream": "reowhite"
+  }
+}
