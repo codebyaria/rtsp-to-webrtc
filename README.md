@@ -38,8 +38,9 @@ npm start
 
 ## Akses RTSP Stream
 - **Lokal:**
-  ```
-http://localhost:8000/webrtc.html```
+```sh
+http://localhost:8000/webrtc.html
+```
 
 - **Akses Publik:**
   Gunakan **ngrok** untuk membuat akses publik:
