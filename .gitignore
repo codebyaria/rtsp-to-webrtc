@@ -3,3 +3,4 @@ node_modules/*
 stream/*.sum
 stream/stream
 tmp/*
+stream/*.exe
